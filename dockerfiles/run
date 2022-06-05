@@ -1,0 +1,7 @@
+FROM debian:buster-slim
+
+WORKDIR /app
+
+COPY ./target/release/estimate-pi . 
+
+CMD ["./estimate-pi"]
